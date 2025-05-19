@@ -1,0 +1,72 @@
+.container_login {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../image/Example_6.webp);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.form-container {
+    background: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1vw;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.800);
+    display: none;
+}
+
+.form-container.active {
+    display: flex;
+}
+
+input {
+    width: 50%;
+    height: 5%;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1vw;
+    border-bottom: 2px solid white;
+    outline: none;
+
+}
+
+button {
+    width: 30%;
+    height: 5%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1vw;
+    transition: 0.5s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.link {
+    background: none;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    .form-container {
+        width: 100%;
+        font-size: 4vw;
+    }
+    input {
+        width: 90%;
+        font-size: 3vw;
+    }
+    button {
+        width: 60%;
+        font-size: 3vw;
+    }
+}

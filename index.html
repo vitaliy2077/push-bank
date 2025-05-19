@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank</title>
+    <link rel="stylesheet" href="style/head.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="container_head">
+            <div class="burger_block" id="Burg">
+                <a href="">Push-Bank</a>
+                <a href="404.html">Мой банк</a>
+                <a href="404.html">Карты</a>
+                <a href="404.html">Кредиты</a>
+                <a href="store/index.html">Магазин</a>
+                <a href="404.html">Рассрочка</a>
+                <a href="404.html">Инвестиции</a>
+                <a href="gallery/index.html">Галерея</a>
+                <button onmousedown="viewDivSix()">x</a>
+            </div>
+            <button class="burger" onmousedown="viewDivFive()">
+                <img src="image/burger-bar.png" alt="">
+            </button>
+            <a href="" class="head_title">
+                <img src="image/Group 513164.webp" loading="lazy" alt="">
+                Push-Bank
+            </a>
+            <div class="head_text">
+                <a href="404.html">Мой банк</a>
+                <a href="404.html">Карты</a>
+                <a href="404.html">Кредиты</a>
+                <a href="store/index.html">Магазин</a>
+                <a href="404.html">Рассрочка</a>
+                <a href="404.html">Инвестиции</a>
+                <a href="gallery/index.html">Галерея</a>
+            </div>
+            <button onclick="logout()" class="head_login" id="username"></button>
+        </div>
+    </header>
+    <div class="container_mac" id="base">
+        <div class="mac_text">Твой банк. Всегда онлайн. <br>Управляй финансами легко — в любое время, из любого места.
+        </div>
+        <a href="404.html" class="mac_button">Перейти</a>
+        <div class="mac">
+            <video id="myVideo" autoplay muted>
+                <source src="image/vide.mp4" type="video/mp4">
+            </video>
+            <video id="myVideoDark" autoplay muted>
+                <source src="image/videodark.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="mas">
+        <img src="image/Group13171.webp" alt="">
+        </div>
+    </div>
+    <div class="container_card" id="cards">
+        <div class="card_text"><span>Карты</span>
+            Удобные, стильные и надёжные — наши карты созданы для тех, кто ценит контроль, свободу и выгоду. Оформляй за
+            минуту, используй в любой точке мира и получай больше от каждого платежа.
+        </div>
+        <div class="card_block">
+            <a href="404.html" class="cards">
+                Дебетовая карта
+                <span>Просто, удобно, ежедневно</span>
+                <div class="card_image">
+                    <img src="image/Classic-6.webp" loading="lazy" alt="" class="front">
+                    <img src="image/Group 513169.webp" loading="lazy" class="back">
+                </div>
+            </a>
+            <a href="404.html" class="cards">
+                Премиум-карта
+                <span>Финансовый комфорт на новом уровне</span>
+                <div class="card_image">
+                    <img src="image/Classic-4.webp" loading="lazy" alt="" class="front">
+                    <img src="image/Group 513170.webp" loading="lazy" class="back">
+                </div>
+            </a>
+            <a href="404.html" class="cards">
+                Кредитная карта
+                <span>Свобода в моменте — оплати сейчас, верни потом</span>
+                <div class="card_image">
+                    <img src="image/Classic.webp" loading="lazy" class="front">
+                    <img src="image/Group 513167.webp" loading="lazy" class="back">
+                </div>
+            </a>
+        </div>
+        <a href="404.html" class="mac_button">Перейти</a>
+    </div>
+    <div class="container_scrol" id="scroll">
+        <div class="scrol_text">
+            Банк. Магазин. Выгода. <br>Всё в одном месте
+            <div class="scrol_button">
+                <button class="scrol_btn" onclick="scrollLeftt()">
+                    <img src="image/Icon-WhiteOutline.webp" loading="lazy" alt="" class="btn_left">
+                </button>
+                <button class="scrol_btn" onclick="scrollRight()">
+                    <img src="image/Icon-WhiteOutline.webp" loading="lazy" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="scroll_row" id="card">
+            <a href="iphone/index.html" class="product product_one">
+                <img src="image/iphone-15-model-unselect-gallery-2-202309_GEO_US.webp" loading="lazy" alt="">
+            </a>
+            <a href="404.html" class="product">
+                <img src="image/finish_alum_black_02__cfbupf7b9rte_xlarge_2x_1_11zon.webp" loading="lazy" alt="">
+            </a>
+            <a href="404.html" class="product">
+                <img src="image/videoframe_0_4_11zon.webp" loading="lazy" alt="">
+            </a>
+            <a href="404.html" class="product">
+                <img src="image/videoframe_4566_3_11zon.webp" loading="lazy" alt="">
+            </a>
+            <a href="404.html" class="product">
+                <img src="image/mika-baumeister-HADjLtjoe2E-unsplash_10_11zon.webp" loading="lazy" alt="">
+            </a>
+            <a href="404.html" class="product">
+                <img src="image/AQAKyHjMnScWb6jzxYNcSP3bzcc4dp1aRURJxAHY-OhhVP6_p_ItE14N1Gth7n7d698-f3Cu-1JlkwySCaj1sRP7qH4-1600x890_1_11zon.webp"
+                    loading="lazy" alt="">
+            </a>
+            <a href="404.html" class="product">
+                <img src="image/maria-chetvernina-3d52DHSI4zg-unsplash_6_11zon.webp" loading="lazy" alt="">
+            </a>
+            <a href="404.html" class="product">
+                <img src="image/quang-vy-woKTtF4mrsU-unsplash_7_11zon.webp" loading="lazy" alt="">
+            </a>
+            <a href="404.html" class="product product_last">
+                <img src="image/rombo-Qp9Vl17YbXA-unsplash_11_11zon.webp" loading="lazy" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="container_credit" id="credit">
+        <div class="credit_text">
+            <span>Кредит, который<br> подстраивается<br> под тебя</span>
+            Получите нужную сумму — быстро, удобно и прозрачно. <br>
+            Гибкие условия, одобрение за несколько минут и <br>
+            полное управление в вашем онлайн-банке. <br>
+            Без скрытых комиссий и с возможностью досрочного погашения.<br>
+            <a href="404.html" class="credit_button">Перейти</a>
+        </div>
+        <div class="credit_image"></div>
+    </div>
+    <div class="container_travel" id="countryBack">
+        <div class="travel_block" id="countryJp">
+            <div class="travel_text">
+                <span>Япония — баланс будущего <br>и традиций</span>
+                Погрузись в удивительный мир, где футуристические небоскрёбы соседствуют с древними храмами.
+                Япония — это чайные церемонии, цветение сакуры, шумные улицы Токио и тишина горного Киото.
+                Здесь каждый шаг — как сцена из аниме, каждая деталь — как искусство.
+                <a href="404.html" class="text_button">Перейти</a>
+            </div>
+            <div class="travel_button">
+                <button class="travel_country" onmousedown="viewDivOne()">
+                    <img src="image/free-icon-japan-197604.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivTwo()">
+                    <img src="image/flag-_1_.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivThree()">
+                    <img src="image/free-icon-south-korea-5111586.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivFour()">
+                    <img src="image/free-icon-maldives-197404.webp" loading="lazy" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="travel_block" id="countryDb">
+            <div class="travel_text">
+                <span>Дубай — город, <br>построенный мечтой</span>
+                Ощути роскошь, которую ты можешь потрогать руками: башня Бурдж-Халифа, острова в форме пальм, отели с
+                подводными комнатами.
+                Дубай — это восточный рынок, дюны пустыни, сёрфинг на песке и вечер в лаунже на крыше небоскрёба.
+                Идеален для тех, кто любит масштаб, стиль и яркость.
+                <a href="404.html" class="text_button db_btn">Перейти</a>
+            </div>
+            <div class="travel_button">
+                <button class="travel_country" onmousedown="viewDivOne()">
+                    <img src="image/free-icon-japan-197604.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivTwo()">
+                    <img src="image/flag-_1_.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivThree()">
+                    <img src="image/free-icon-south-korea-5111586.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivFour()">
+                    <img src="image/free-icon-maldives-197404.webp" loading="lazy" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="travel_block" id="countryKr">
+            <div class="travel_text">
+                <span>Корея — энергия мегаполиса<br> и дух традиций</span>
+                Сеул не спит. Он танцует под ритмы K-pop, пестрит неоном, но знает, как быть уютным.
+                Попробуй уличную еду на ночном рынке, исследуй королевские дворцы, зайди в тематическое кафе с
+                животными.
+                Это страна, где современность и культура живут в одном темпе.
+                <a href="404.html" class="text_button kr_btn">Перейти</a>
+            </div>
+            <div class="travel_button">
+                <button class="travel_country" onmousedown="viewDivOne()">
+                    <img src="image/free-icon-japan-197604.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivTwo()">
+                    <img src="image/flag-_1_.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivThree()">
+                    <img src="image/free-icon-south-korea-5111586.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivFour()">
+                    <img src="image/free-icon-maldives-197404.webp" loading="lazy" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="travel_block" id="countryMd">
+            <div class="travel_text">
+                <span>Мальдивы — твой личный<br> рай на земле</span>
+                Здесь нет суеты — только океан, солнце, белоснежный песок и тишина.
+                Пробуждение под шум волн, ужин на воде, снорклинг с мантами и уединение в вилле посреди лагуны.
+                Мальдивы — для тех, кто хочет остановить время и просто жить.
+                <a href="404.html" class="text_button md_btn">Перейти</a>
+            </div>
+            <div class="travel_button">
+                <button class="travel_country" onmousedown="viewDivOne()">
+                    <img src="image/free-icon-japan-197604.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivTwo()">
+                    <img src="image/flag-_1_.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivThree()">
+                    <img src="image/free-icon-south-korea-5111586.webp" loading="lazy" alt="">
+                </button>
+                <button class="travel_country" onmousedown="viewDivFour()">
+                    <img src="image/free-icon-maldives-197404.webp" loading="lazy" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_top">
+            <div class="top_block">
+                <span>Мы — современный онлайн-банк, созданный для тех, кто ценит простоту, безопасность и свободу в
+                    управлении финансами. Наша цель — сделать банковские услуги доступными и понятными каждому,
+                    независимо от места, времени и устройства. Мы предлагаем быстрые переводы, удобные карты,
+                    продуманные инструменты для сбережений и инвестиций — всё в одном месте, с поддержкой, которая
+                    действительно заботится. Надёжность, прозрачность и инновации — наш фундамент, на котором строится
+                    ваше финансовое спокойствие.</span>
+                <div class="top_box">
+                    <span>«Банк — это не просто место, где хранятся деньги. Это инструмент, с помощью которого вы
+                        строите своё будущее.»</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_logo">Push-Bank</div>
+            <div class="footer_text">
+                <a href="#base">Главная</a>
+                <a href="#cards">Карты</a>
+                <a href="#scroll">Магазин</a>
+                <a href="#credit">Кредит</a>
+                <a href="#countryBack">Путешествия</a>
+                <button class="btn_light" onclick="toggleDarkMode()">
+                    <img id="themeIcon" src="image/moons.png" loading="lazy" alt="">
+                </button>
+            </div>
+            <div id="themeToggleBtn" class="footer_social">is4051@ku.edu.kz</div>
+        </div>
+    </footer>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/dark.js"></script>
+
+</body>
+
+</html>

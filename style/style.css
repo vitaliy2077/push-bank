@@ -1,0 +1,579 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.container_mac {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    aspect-ratio: 1.7/1;
+    will-change: transform;
+}
+
+.mac_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 15%;
+    font-size: 1.7vw;
+    line-height: 2;
+}
+
+.mac_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 5%;
+    border-radius: 50px;
+    background-color: rgba(233, 58, 125, 1);
+    font-size: 0.9vw;
+    transition: 0.5s;
+}
+
+.mac_button:hover {
+    transform: scale(1.05);
+}
+
+.mac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+}
+
+.mac video {
+    max-width: 90%;
+    height: auto;
+}
+
+.container_card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    aspect-ratio: 2/1;
+    background-color: rgba(47, 24, 147, 1);
+    will-change: transform;
+}
+
+.card_text {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 25%;
+    color: rgb(180, 180, 180);
+    font-size: 1vw;
+    text-align: center;
+}
+
+.card_text span {
+    font-size: 2vw;
+    color: white;
+}
+
+.card_block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+}
+
+.cart_button:hover {
+    transform: scale(1.05);
+}
+
+.cards {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 75%;
+    background-color: white;
+    font-size: 1.2vw;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.cards span {
+    font-size: 0.9vw;
+    height: 15%;
+}
+
+.card_image {
+    position: relative;
+}
+
+.front {
+    max-width: 90%;
+    height: auto;
+    transition: 0.8s;
+    backface-visibility: hidden;
+}
+
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+    left: 4.9%;
+    top: 0;
+    max-width: 90%;
+    height: auto;
+    transition: 0.8s;
+    transform: rotateY(180deg);
+}
+
+.cards:hover .front {
+    transform: rotateY(180deg);
+}
+
+.cards:hover .back {
+    transform: rotateY(0deg);
+}
+
+.container_scrol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100vw;
+    will-change: transform;
+    aspect-ratio: 2/1;
+}
+
+.scrol_text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    font-size: 1.7vw;
+}
+
+.scrol_button {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.scrol_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 50%;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.scrol_btn:hover {
+    transform: scale(1.1);
+}
+
+.scrol_btn img {
+    max-width: 90%;
+    height: auto;
+}
+
+.btn_left {
+    transform: rotate(180deg);
+}
+
+.scroll_row {
+    display: flex;
+    height: 40%;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.product {
+    flex: 0 0 auto;
+    width: 15%;
+    background-color: rgb(200, 200, 200);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product_one {
+    margin-left: 10%;
+}
+
+.product_last {
+    margin-right: 5%;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.container_credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    aspect-ratio: 2/1;
+    transition: background-color 0.5s ease;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.credit_text {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 40%;
+    height: 70%;
+    font-size: 0.9vw;
+    color: rgba(21, 20, 57, 0.4);
+}
+
+.credit_text span {
+    font-size: 3vw;
+    color: rgba(30, 14, 98, 1);
+}
+
+.credit_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 65%;
+    border-radius: 30px;
+    background-image: url(../image/Example_2\(1\).webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.credit_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 10%;
+    background-color: rgba(72, 43, 231, 1);
+    border-radius: 50px;
+    color: white;
+    transition: 0.5s;
+}
+
+.credit_button:hover {
+    background-color: rgba(245, 198, 235, 1);
+}
+
+.credit_image:hover .container_credit {
+    background-color: rgba(245, 198, 235, 1);
+}
+
+.container_travel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    aspect-ratio: 2/1;
+    background-image: url(../image/yu-kato-824OwkP7sgk-unsplash_3_11zon.webp);
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+
+.travel_block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    background-color: rgba(255, 192, 203, 0.449);
+    border-radius: 20px;
+}
+
+.travel_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 80%;
+    font-size: 1.5vw;
+    color: white
+}
+
+.travel_text span {
+    font-size: 2vw;
+}
+
+.travel_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10%;
+    height: 80%;
+}
+
+.text_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 10%;
+    background-color: pink;
+    border-radius: 50px;
+    font-size: 0.9vw;
+    transition: 0.5s;
+}
+
+.text_button:hover {
+    background-image: url(../image/aboodi-vesakaran-kH9GvBHiNk-unsplash.webp);
+    background-position: center;
+    background-size: cover;
+    font-size: 0;
+}
+
+.travel_country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 20%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.travel_country:hover {
+    transform: scale(1.1);
+}
+
+.travel_country img {
+    max-width: 100%;
+    height: auto;
+}
+
+#countryDb {
+    display: none;
+    background-color: rgba(34, 141, 255, 0.495);
+}
+
+.db_btn {
+    background-color: rgb(34, 141, 255);
+}
+
+#countryKr {
+    display: none;
+    background-color: rgba(0, 63, 131, 0.523);
+}
+
+.kr_btn {
+    background-color: rgb(0, 63, 131);
+}
+
+#countryMd {
+    display: none;
+    background-color: rgba(123, 195, 253, 0.495);
+}
+
+.md_btn {
+    background-color: rgb(123, 194, 253);
+}
+.mac img {
+    display: none;
+}
+
+.mas {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+}
+@media (max-width: 700px) {
+    #myVideo {
+        display: none;
+    }
+    
+    .mac {
+        width: 95%;
+        display: none;
+    }
+    .container_mac {
+        aspect-ratio: 1/3;
+    }
+    .container_card {
+        aspect-ratio: 1/2.5;
+    }
+    .container_credit {
+        aspect-ratio: 1/2.5;
+    }
+    .container_scrol {
+        aspect-ratio: 1/2;
+        flex-direction: column-reverse;
+    }
+    .container_travel {
+        aspect-ratio: 1/2.5;
+    }
+    .mas {
+        display: flex;
+    }
+    .mas img {
+        display: flex;
+        max-width: 95%;
+        height: auto;
+
+    }
+    .mac_button {
+        width: 70%;
+        font-size: 7vw;
+    }
+    .mac_text {
+        font-size: 4.3vw;
+    }
+    .card_block {
+        flex-direction: column;
+        width: 98%;
+        height: 70%;
+    }
+    .cards {
+        width: 80%;
+        height: 30%;
+        font-size: 2vw;
+    }
+    .card_image {
+        max-width: 60%;
+        height: auto;
+    }
+    .cards span {
+        font-size: 2vw;
+    }
+    .card_text {
+        height: 10%;
+        width: 80%;
+        font-size: 2vw;
+    }
+     .card_text span{
+        font-size: 5vw;
+    }
+    .credit_image {
+        display: none;
+    }
+    .credit_text {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.504);
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        font-size: 5vw;
+        color: white;
+    }
+    .credit_text span {
+        color: white;
+        font-size: 6vw;
+    }
+    .credit_button {
+        width: 80%;
+        height: 7%;
+    }
+    .container_credit {
+        background-image: url(../image/Example_4.webp);
+        background-size: cover;
+        background-position: center;
+    }
+    .travel_block {
+        width: 100%;
+        border-radius: 0%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .travel_button {
+        width: 90%;
+        height: 30%;
+        flex-direction: row;
+    }
+    .travel_text {
+        width: 90%;
+        height: 70%;
+        align-items: center;
+        text-align: center;
+        font-size: 5vw;
+    }
+    .travel_text span {
+        font-size: 7vw;
+    }
+    .travel_country {
+        width: 20%;
+        height: 100%;
+    }
+    .text_button {
+        width: 80%;
+        height: 7%;
+        font-size: 5vw;
+    }
+    .product {
+        width: 50%;
+    }
+    .scrol_text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+        font-size: 7vw;
+    }
+    .scrol_btn {
+        width: 40%;
+        height: 100%;
+    }
+    .scrol_button {
+        width: 70%;
+    }
+    #myVideoDark {
+        display: none;
+    }
+}

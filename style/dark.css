@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+.cards {
+    background-color: rgb(30, 30, 30);
+}
+.credit_text {
+    color: white;
+}
+.credit_text span {
+    color: white;
+}
+.top_box {
+    background-color: rgb(30, 30, 30);
+}
+.top_box span {
+    color: white;
+}
+.phone_category {
+    background-color: rgb(33, 33, 33);
+}
+@media (max-width: 700px) {
+    .burger img {
+        filter: none;
+    }
+}

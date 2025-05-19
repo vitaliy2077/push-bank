@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="../style/head.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="container_head">
+            <div class="burger_block" id="Burg">
+                <a href="../index.html">Push-Bank</a>
+                <a href="../404.html">Мой банк</a>
+                <a href="../404.html">Карты</a>
+                <a href="../404.html">Кредиты</a>
+                <a href="../store/index.html">Магазин</a>
+                <a href="../404.html">Рассрочка</a>
+                <a href="../404.html">Инвестиции</a>
+                <a href="">Галерея</a>
+                <button onmousedown="viewDivSix()">x</a>
+            </div>
+            <button class="burger" onmousedown="viewDivFive()">
+                <img src="../image/burger-bar.png" alt="">
+            </button>
+            <a href="../index.html" class="head_title">
+                <img src="../image/Group 513164.webp" loading="lazy" alt="">
+                Push-Bank
+            </a>
+            <div class="head_text">
+                <a href="../404.html">Мой банк</a>
+                <a href="../404.html">Карты</a>
+                <a href="../404.html">Кредиты</a>
+                <a href="../store/index.html">Магазин</a>
+                <a href="../404.html">Рассрочка</a>
+                <a href="../404.html">Инвестиции</a>
+                <a href="" class="selected">Галерея</a>
+            </div>
+            <button onclick="logout()" class="head_login" id="username"></button>
+        </div>
+    </header>
+    <div class="container_gallery" id="base">
+        <div class="gallery_block">
+            <div class="gallery_card">
+                <img src="../image/AQAKyHjMnScWb6jzxYNcSP3bzcc4dp1aRURJxAHY-OhhVP6_p_ItE14N1Gth7n7d698-f3Cu-1JlkwySCaj1sRP7qH4-1600x890_1_11zon.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/iphone-15-model-unselect-gallery-2-202309_GEO_US.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/finish_alum_black_02__cfbupf7b9rte_xlarge_2x_1_11zon.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/maria-chetvernina-3d52DHSI4zg-unsplash_6_11zon.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/mika-baumeister-HADjLtjoe2E-unsplash_10_11zon.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/quang-vy-woKTtF4mrsU-unsplash_7_11zon.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/rombo-Qp9Vl17YbXA-unsplash_11_11zon.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/videoframe_4566_3_11zon.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/Example_2(1).webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/Example_4.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/Example_3.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/Example_5.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/Example_1.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/Example_6.webp" class="gallery_img" alt="">
+            </div>
+            <div class="gallery_card">
+                <img src="../image/Example_7.webp" class="gallery_img" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox hidden">
+        <button class="nav-btn prev" title="Назад">←</button>
+        <img id="lightbox-img" src="" alt="" />
+        <button class="nav-btn next" title="Вперёд">→</button>
+    </div>
+    <footer>
+        <div class="footer_top">
+            <div class="top_block">
+                <span>Мы — современный онлайн-банк, созданный для тех, кто ценит простоту, безопасность и свободу в
+                    управлении финансами. Наша цель — сделать банковские услуги доступными и понятными каждому,
+                    независимо от места, времени и устройства. Мы предлагаем быстрые переводы, удобные карты,
+                    продуманные инструменты для сбережений и инвестиций — всё в одном месте, с поддержкой, которая
+                    действительно заботится. Надёжность, прозрачность и инновации — наш фундамент, на котором строится
+                    ваше финансовое спокойствие.</span>
+                <div class="top_box">
+                    <span>«Банк — это не просто место, где хранятся деньги. Это инструмент, с помощью которого вы
+                        строите своё будущее.»</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_logo">Push-Bank</div>
+            <div class="footer_text">
+                <a href="#base">Начало</a>
+                <button class="btn_light" onclick="toggleDarkMode()">
+                    <img id="themeIcon" src="../image/moons.png" loading="lazy" alt="">
+                </button>
+            </div>
+            <div id="themeToggleBtn" class="footer_social">is4051@ku.edu.kz</div>
+        </div>
+    </footer>
+    <script src="../JavaScript/dark.js"></script>
+    <script src="JavaScript/script.js"></script>
+    <script src="../JavaScript/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phone</title>
+    <link rel="stylesheet" href="../style/head.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="container_head">
+             <div class="burger_block" id="Burg">
+                <a href="../index.html">Push-Bank</a>
+                <a href="../404.html">Мой банк</a>
+                <a href="../404.html">Карты</a>
+                <a href="../404.html">Кредиты</a>
+                <a href="../store/index.html">Магазин</a>
+                <a href="../404.html">Рассрочка</a>
+                <a href="../404.html">Инвестиции</a>
+                <a href="">Галерея</a>
+                <button onmousedown="viewDivSix()">x</a>
+            </div>
+            <button class="burger" onmousedown="viewDivFive()">
+                <img src="../image/burger-bar.png" alt="">
+            </button>
+            <a href="../index.html" class="head_title">
+                <img src="../image/Group 513164.webp" loading="lazy" alt="">
+                Push-Bank
+            </a>
+            <div class="head_text">
+                <a href="../404.html">Мой банк</a>
+                <a href="../404.html">Карты</a>
+                <a href="../404.html">Кредиты</a>
+                <a href="../store/index.html" class="selected">Магазин</a>
+                <a href="../404.html">Рассрочка</a>
+                <a href="../404.html">Инвестиции</a>
+                <a href="../gallery/index.html">Галерея</a>
+            </div>
+           <button onclick="logout()" class="head_login" id="username"></button>
+        </div>
+    </header>
+    <div class="container_phone" id="base">
+        <div class="phone_block">
+            <span class="name">Смартфоны</span>
+            <div class="phone_category  phone_video">
+                <video autoplay muted loop>
+                    <source src="../image/xlarge_2x.mp4" type="video/mp4">
+                </video>
+            </div>
+            <a href="../404.html" class="phone_category categoty_one">
+                <div class="phone_img">
+                    <img src="../image/iphone-15-model-unselect-gallery-2-202309_GEO_US.webp" alt="">
+                </div>
+                <div class="phone_text">
+                    <span>Iphone 15</span>
+                    <span>360 000</span>
+                    <span class="info">iPhone 15 сочетает элегантный дизайн, мощный чип A16 Bionic, усовершенствованную камеру с функцией Smart HDR и ночным режимом, а также удобный USB-C. Благодаря Dynamic Island ты получаешь живое взаимодействие с уведомлениями, звонками и активностями.</span>
+                </div>
+            </a>
+            <a href="../404.html" class="phone_category">
+                <div class="phone_img">
+                    <img src="../image/iphone-16-model-unselect-gallery-2-202409_GEO_US.webp" alt="">
+                </div>
+                <div class="phone_text">
+                    <span>Iphone 16</span>
+                    <span>480 000</span>
+                    <span class="info">iPhone 16 — это сочетание элегантного дизайна, мощного процессора и ещё более умной камеры. Система искусственного интеллекта оптимизирует снимки в реальном времени, а энергоэффективный дисплей обеспечивает яркое изображение и длительное время работы.</span>
+                </div>
+            </a>
+            <a href="../404.html" class="phone_category">
+                <div class="phone_img">
+                    <img src="../image/iphone-16-pro-model-unselect-gallery-2-202409_GEO_US.webp" alt="">
+                </div>
+                <div class="phone_text">
+                    <span>Iphone 16 pro</span>
+                    <span>600 000</span>
+                    <span class="info"> iPhone 16 Pro — это максимальная производительность, передовые технологии и премиальные материалы. Камера профессионального уровня, корпус из титана и вычислительная фотография нового поколения — всё это создаёт неповторимый опыт.</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_top">
+            <div class="top_block">
+                <span>Мы — современный онлайн-банк, созданный для тех, кто ценит простоту, безопасность и свободу в
+                    управлении финансами. Наша цель — сделать банковские услуги доступными и понятными каждому,
+                    независимо от места, времени и устройства. Мы предлагаем быстрые переводы, удобные карты,
+                    продуманные инструменты для сбережений и инвестиций — всё в одном месте, с поддержкой, которая
+                    действительно заботится. Надёжность, прозрачность и инновации — наш фундамент, на котором строится
+                    ваше финансовое спокойствие.</span>
+                <div class="top_box">
+                    <span>«Банк — это не просто место, где хранятся деньги. Это инструмент, с помощью которого вы
+                        строите своё будущее.»</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_logo">Push-Bank</div>
+            <div class="footer_text">
+                <a href="#base">Начало</a>
+                <button class="btn_light" onclick="toggleDarkMode()">
+                    <img id="themeIcon" src="../image/moons.png" loading="lazy" alt="">
+                </button>
+            </div>
+            <div id="themeToggleBtn" class="footer_social">is4051@ku.edu.kz</div>
+        </div>
+    </footer>
+    <script src="../JavaScript/dark.js"></script>
+    <script src="../JavaScript/login.js"></script>
+</body>
+
+</html>
